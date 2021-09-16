@@ -7,11 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using uPLibrary.Networking.M2Mqtt;
+using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        MqttClient mqttClient;
+        private readonly string btnClearText;
+
+        public string Clear { get; private set; }
+        public object Button5 { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +27,7 @@ namespace WindowsFormsApp1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -34,18 +43,44 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem != null)
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Task.Run(() =>
             {
-                if (comboBox3.SelectedItem != null)
+                Task.Run(() =>
                 {
-                    listBox2.Items.Add(comboBox3.SelectedItem);
-                    int cost = 0;
-                    if (comboBox2.SelectedItem == "")
-                    {
-                        cost = Convert.ToInt32(comboBox3.SelectedItem) * 50;
-                        listBox2.Items.Add(cost);
-                        listBox1.Items.Add(comboBox2.SelectedItem);
-                    }
-                }
+                    mqttClient = new MqttClient("broker.mqttdashboard.com");
+                    mqttClient.MqttMsgPublishReceived += MqttClient_MqttMsgPublishRecived;
+                    mqttClient.Subscribe(new string[] { "NonJoong/hardware/temp" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+                    mqttClient.Connect("N/FFF");
+                });
+            });
+        }
+
+        private void MqttClient_MqttMsgPublishRecived(object sender, MqttMsgPublishEventArgs e)
+        {
+
+            var message = Encoding.UTF8.GetString(e.Message);
+            textBox1.Invoke((MethodInvoker)(() => textBox1.Text =message));
+            textBox2.Invoke((MethodInvoker)(() => textBox2.Text = message));
+            textBox3.Invoke((MethodInvoker)(() => textBox3.Text = message));
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
