@@ -11,3 +11,5 @@ C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\obj\
 C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\M2Mqtt.Net.dll
 C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\M2Mqtt.Net.pdb
 C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources

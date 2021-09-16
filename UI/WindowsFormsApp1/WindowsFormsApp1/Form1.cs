@@ -70,15 +70,32 @@ namespace WindowsFormsApp1
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            textBox1.TextAlign = HorizontalAlignment.Center;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.TextAlign = HorizontalAlignment.Center;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.TextAlign = HorizontalAlignment.Center;
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
