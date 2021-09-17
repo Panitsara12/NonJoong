@@ -160,5 +160,15 @@ namespace WindowsFormsApp1
         {
             textBox9.TextAlign = HorizontalAlignment.Center;
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

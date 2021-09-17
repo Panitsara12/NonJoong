@@ -118,10 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1904654-cancel-close-cross-delete-reject-remove-stop_122504" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1904654-cancel-close-cross-delete-reject-remove-stop_122504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Water-Ball-PNG-Clipart-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Water-Ball-PNG-Clipart-Background1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ecommerce_online_shopping_icon_192443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ecommerce_online_shopping_icon_192443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shrimp-Transparent-Images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shrimp-Transparent-Images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cold-room-temperatures-store-at-room-temperature-ico-11569047762fy8nl6pxgn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cold-room-temperatures-store-at-room-temperature-ico-11569047762fy8nl6pxgn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="augmentedreality-5_111389" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\augmentedreality-5_111389.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486485588-add-create-new-math-sign-cross-plus_81186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3-Number-PNG-Free-Commercial-Use-Images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-Number-PNG-Free-Commercial-Use-Images1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="temperature-icon-png-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature-icon-png-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="augmentedreality-5_1113891" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\augmentedreality-5_1113891.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aquarium-Fish-Tank-Transparent-Free-PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aquarium-Fish-Tank-Transparent-Free-PNG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Click-Here-Button-PNG-Clipart-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Click-Here-Button-PNG-Clipart-Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2-Number-PNG-HD-Free-Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2-Number-PNG-HD-Free-Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crosscirclehd_106118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crosscirclehd_106118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-Number-PNG-HD-Free-Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-Number-PNG-HD-Free-Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_vaccine_syringe_coronavirus_covid_medical_icon_141619" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_vaccine_syringe_coronavirus_covid_medical_icon_141619.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button-PNG-Royalty-Free-Photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button-PNG-Royalty-Free-Photo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486485588-add-create-new-math-sign-cross-plus_811862" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_811862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486485588-add-create-new-math-sign-cross-plus_811861" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_811861.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486504817-delete-minus-cancel-exit-remove_81373" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486504817-delete-minus-cancel-exit-remove_81373.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

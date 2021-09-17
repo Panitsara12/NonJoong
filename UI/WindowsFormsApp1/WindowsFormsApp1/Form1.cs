@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,15 +55,15 @@ namespace WindowsFormsApp1
                 mqttClient.MqttMsgPublishReceived += MqttClient_MqttMsgPublishRecived;
                 mqttClient.Subscribe(new string[] { "NonJoong/hardware/temp" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
                 mqttClient.Connect("N/FFF");
-                
+
             });
         }
 
         private void MqttClient_MqttMsgPublishRecived(object sender, MqttMsgPublishEventArgs e)
         {
-            
+
             var message = Encoding.UTF8.GetString(e.Message);
-            textBox1.Invoke((MethodInvoker)(() => textBox1.Text =message));
+            textBox1.Invoke((MethodInvoker)(() => textBox1.Text = message));
             textBox2.Invoke((MethodInvoker)(() => textBox2.Text = message));
             textBox3.Invoke((MethodInvoker)(() => textBox3.Text = message));
         }
@@ -84,8 +84,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -129,11 +128,11 @@ namespace WindowsFormsApp1
 
         }
 
-        
+
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -144,6 +143,57 @@ namespace WindowsFormsApp1
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem != null)
+            {
+
+                string value = comboBox1.Text;
+
+                Task.Run(() =>
+                {
+                    if (value == "1")
+                    {
+                        if (mqttClient != null && mqttClient.IsConnected)
+                        {
+                            mqttClient.Publish("NonJoong/hardware/water1", Encoding.UTF8.GetBytes("ON1"));
+                        }
+                    }
+                    else if (value == "2")
+                    {
+                        if (mqttClient != null && mqttClient.IsConnected)
+                        {
+                            mqttClient.Publish("NonJoong/hardware/water2", Encoding.UTF8.GetBytes("ON2"));
+                        }
+                    }
+                    else if (value == "3")
+                    {
+                        if (mqttClient != null && mqttClient.IsConnected)
+                        {
+                            mqttClient.Publish("NonJoong/hardware/water3", Encoding.UTF8.GetBytes("ON3"));
+                        }
+                    }
+                });
+            }
         }
     }
 }

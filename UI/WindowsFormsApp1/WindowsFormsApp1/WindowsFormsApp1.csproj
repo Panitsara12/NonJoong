@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +52,12 @@
     </Reference>
     <Reference Include="M2Mqtt.Net, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\M2Mqtt.4.3.0.0\lib\net45\M2Mqtt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.1.2556, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.1\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.1.0.2556, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.1.0\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\MySql.Data.dll</HintPath>
@@ -154,7 +162,30 @@
     <None Include="Resources\temperature-icon-png-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1-Number-PNG-HD-Free-Image1.png" />
+    <None Include="Resources\2-Number-PNG-HD-Free-Image1.png" />
+    <None Include="Resources\Aquarium-Fish-Tank-Transparent-Free-PNG1.png" />
+    <None Include="Resources\3-Number-PNG-Free-Commercial-Use-Images1.png" />
+    <None Include="Resources\Water-Ball-PNG-Clipart-Background1.gif" />
+    <None Include="Resources\Click-Here-Button-PNG-Clipart-Background1.png" />
+    <None Include="Resources\Shrimp-Transparent-Images.png" />
+    <None Include="Resources\ecommerce_online_shopping_icon_192443.png" />
+    <None Include="Resources\1904654-cancel-close-cross-delete-reject-remove-stop_122504.png" />
+    <None Include="Resources\crosscirclehd_106118.png" />
+    <None Include="Resources\no_vaccine_syringe_coronavirus_covid_medical_icon_141619.png" />
+    <None Include="Resources\Button-PNG-Royalty-Free-Photo.png" />
+    <None Include="Resources\augmentedreality-5_111389.png" />
+    <None Include="Resources\augmentedreality-5_1113891.png" />
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png" />
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_811861.png" />
     <Content Include="temperature-icon-png-11084-Windows.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
 </Project>
