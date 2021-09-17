@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,6 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         MqttClient mqttClient;
-        private readonly string btnClearText;
 
         public string Clear { get; private set; }
         public object Button5 { get; private set; }
@@ -48,21 +48,20 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            connect_DB();
             Task.Run(() =>
             {
-                Task.Run(() =>
-                {
-                    mqttClient = new MqttClient("broker.mqttdashboard.com");
-                    mqttClient.MqttMsgPublishReceived += MqttClient_MqttMsgPublishRecived;
-                    mqttClient.Subscribe(new string[] { "NonJoong/hardware/temp" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
-                    mqttClient.Connect("N/FFF");
-                });
+                mqttClient = new MqttClient("broker.mqttdashboard.com");
+                mqttClient.MqttMsgPublishReceived += MqttClient_MqttMsgPublishRecived;
+                mqttClient.Subscribe(new string[] { "NonJoong/hardware/temp" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+                mqttClient.Connect("N/FFF");
+                
             });
         }
 
         private void MqttClient_MqttMsgPublishRecived(object sender, MqttMsgPublishEventArgs e)
         {
-
+            
             var message = Encoding.UTF8.GetString(e.Message);
             textBox1.Invoke((MethodInvoker)(() => textBox1.Text =message));
             textBox2.Invoke((MethodInvoker)(() => textBox2.Text = message));
@@ -96,6 +95,53 @@ namespace WindowsFormsApp1
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        public void connect_DB()
+        {
+            string query = "SELECT * FROM lots";
+            var con = new MySqlConnection("host = s465z7sj4pwhp7fn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;user=b753i7m0218wctsc;password=mmvcw9sv3l1dke2x;database=edrbr8lt4e4qwwe1;port=3306");
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            try
+            {
+                con.Open();
+
+                string viewData = "SELECT * FROM lots";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(viewData, con);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+                label4.Text = "Concected";
+                label4.ForeColor = Color.Green;
+
+            }
+
+            catch
+            {
+                label4.Text = "Disconcected";
+                label4.ForeColor = Color.Red;
+            }
+
+        }
+
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
