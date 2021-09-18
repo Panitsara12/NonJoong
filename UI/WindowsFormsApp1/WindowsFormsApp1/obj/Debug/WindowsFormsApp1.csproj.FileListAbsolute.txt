@@ -82,3 +82,4 @@ D:\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MaterialDesignThemes.
 D:\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MaterialDesignColors.pdb
 D:\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ADMIN\Desktop\testC#\NonJoong\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources

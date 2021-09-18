@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connect_DB();
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -207,9 +207,26 @@ namespace WindowsFormsApp1
             throw new NotImplementedException();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             connect_DB();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            connect_DB();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

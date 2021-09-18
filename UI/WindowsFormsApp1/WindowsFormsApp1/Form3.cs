@@ -202,11 +202,7 @@ namespace WindowsFormsApp1
         }
         private void button1_Click_2(object sender, EventArgs e)
         {
-            if (textBox2.Text != "" && textBox2.Text != "add ready" && textBox1.Text != "" && textBox1.Text != "Lot ID")
-            {
-                updateDB();
-                this.Close();
-            }
+            
         }
 
             private void updateDB()
@@ -229,12 +225,21 @@ namespace WindowsFormsApp1
             if (mqttClient != null && mqttClient.IsConnected)
             {
                 var ready2 = int.Parse(textBox2.Text);
-                var unready = int.Parse(textBox2.Text) -  int.Parse(notready);
+                var unready = int.Parse(notready) - (int.Parse(textBox2.Text)-int.Parse(ready));
 
                 string send = textBox1.Text + ";" + ready2 + ";" + unready + ";" + date;
                 mqttClient.Publish("UI/update/db", Encoding.UTF8.GetBytes(send));
             }
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text != "" && textBox2.Text != "add ready" && textBox1.Text != "" && textBox1.Text != "Lot ID")
+            {
+                updateDB();
+                this.Close();
+            }
         }
     }
 }

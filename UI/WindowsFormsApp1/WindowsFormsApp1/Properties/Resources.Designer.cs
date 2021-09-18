@@ -73,6 +73,46 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_Number_PNG_HD_Free_Image1 {
+            get {
+                object obj = ResourceManager.GetObject("1-Number-PNG-HD-Free-Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_Number_PNG_HD_Free_Image2 {
+            get {
+                object obj = ResourceManager.GetObject("1-Number-PNG-HD-Free-Image2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_Number_PNG_HD_Free_Image3 {
+            get {
+                object obj = ResourceManager.GetObject("1-Number-PNG-HD-Free-Image3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1197534 {
+            get {
+                object obj = ResourceManager.GetObject("1197534", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1486485588_add_create_new_math_sign_cross_plus_81186 {
             get {
                 object obj = ResourceManager.GetObject("1486485588-add-create-new-math-sign-cross-plus_81186", resourceCulture);
@@ -113,6 +153,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1686898 {
+            get {
+                object obj = ResourceManager.GetObject("1686898", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1861881 {
+            get {
+                object obj = ResourceManager.GetObject("1861881", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1904654_cancel_close_cross_delete_reject_remove_stop_122504 {
             get {
                 object obj = ResourceManager.GetObject("1904654-cancel-close-cross-delete-reject-remove-stop_122504", resourceCulture);
@@ -133,9 +193,59 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20130131_211501_hdr2 {
+            get {
+                object obj = ResourceManager.GetObject("20130131_211501_hdr2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3_Number_PNG_Free_Commercial_Use_Images {
             get {
                 object obj = ResourceManager.GetObject("3-Number-PNG-Free-Commercial-Use-Images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3357507 {
+            get {
+                object obj = ResourceManager.GetObject("3357507", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _33575071 {
+            get {
+                object obj = ResourceManager.GetObject("33575071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3572831 {
+            get {
+                object obj = ResourceManager.GetObject("3572831", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a0dcf886c972e511a3326d391a33aece {
+            get {
+                object obj = ResourceManager.GetObject("a0dcf886c972e511a3326d391a33aece", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +276,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap augmentedreality_5_1113891 {
             get {
                 object obj = ResourceManager.GetObject("augmentedreality-5_1113891", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bin {
+            get {
+                object obj = ResourceManager.GetObject("bin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +333,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_30094505_stock_photo_time_clock {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_30094505-stock-photo-time-clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ecommerce_online_shopping_icon_192443 {
             get {
                 object obj = ResourceManager.GetObject("ecommerce_online_shopping_icon_192443", resourceCulture);
@@ -223,9 +353,39 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gyeongju_1 {
+            get {
+                object obj = ResourceManager.GetObject("Gyeongju-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gyeongju_11 {
+            get {
+                object obj = ResourceManager.GetObject("Gyeongju-11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap no_vaccine_syringe_coronavirus_covid_medical_icon_141619 {
             get {
                 object obj = ResourceManager.GetObject("no_vaccine_syringe_coronavirus_covid_medical_icon_141619", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh {
+            get {
+                object obj = ResourceManager.GetObject("refresh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +406,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap temperature_icon_png_1 {
             get {
                 object obj = ResourceManager.GetObject("temperature-icon-png-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thermometer {
+            get {
+                object obj = ResourceManager.GetObject("thermometer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

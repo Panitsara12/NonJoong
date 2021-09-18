@@ -184,18 +184,24 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if((textBox1.Text != "") && (textBox6.Text != "") && (textBox7.Text != "") && (textBox8.Text != "") && (textBox9.Text != ""))
+       
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            if ((textBox1.Text != "") && (textBox6.Text != "") && (textBox7.Text != "") && (textBox8.Text != "") && (textBox9.Text != ""))
             {
                 if ((textBox1.Text != "quantity") && (textBox6.Text != "ready") && (textBox7.Text != "not ready") && (textBox8.Text != "defet") && (textBox9.Text != "tank"))
                 {
                     //var date = DateTime.Now.ToString("yyyy/MM/dd");
                     string date;
                     var yearPS = DateTime.Now.ToString("yyyy");
-                    
-                    if (int.Parse(yearPS) >= 2500 ) {
+
+                    if (int.Parse(yearPS) >= 2500)
+                    {
                         var year = (int.Parse(yearPS) - 543).ToString();
                         var DM = DateTime.Now.ToString("MM/dd");
-                        date = year +"/"+DM;
+                        date = year + "/" + DM;
                     }
                     else
                     {
@@ -203,20 +209,17 @@ namespace WindowsFormsApp1
                     }
                     if (mqttClient != null && mqttClient.IsConnected)
                     {
-                        string send = textBox1.Text + ";" + textBox6.Text + ";" + textBox7.Text + ";" + textBox8.Text + ";" + textBox9.Text+";" +date;
+                        string send = textBox1.Text + ";" + textBox6.Text + ";" + textBox7.Text + ";" + textBox8.Text + ";" + textBox9.Text + ";" + date;
                         mqttClient.Publish("UI/insert/db", Encoding.UTF8.GetBytes(send));
                     }
                     this.Close();
                 }
-               
+
             }
             else
             {
                 MessageBox.Show("Error");
             }
         }
-
-      
-
     }
 }
