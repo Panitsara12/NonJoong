@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using uPLibrary.Networking.M2Mqtt;
+using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace WindowsFormsApp1
 {
@@ -17,6 +18,11 @@ namespace WindowsFormsApp1
         public Form4()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -42,21 +48,37 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
-            if(textBox1.Text != "" && textBox1.Text != "")
+            Task.Run(() =>
+            {
+                mqttClient = new MqttClient("broker.mqttdashboard.com");
+                mqttClient.MqttMsgPublishReceived += MqttClient_MqttMsgPublishRecived;
+                mqttClient.Subscribe(new string[] { "UI/del/db" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_LEAST_ONCE });
+                mqttClient.Connect("N/FFF");
+
+            });
+        }
+
+        private void MqttClient_MqttMsgPublishRecived(object sender, MqttMsgPublishEventArgs e)
+        {
+
+            var message = Encoding.UTF8.GetString(e.Message);
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text != "" && textBox1.Text != "Lot ID")
             {
                 if (mqttClient != null && mqttClient.IsConnected)
                 {
                     var send = textBox1.Text;
-                    mqttClient.Publish("UI/delete/db", Encoding.UTF8.GetBytes(send));
+                    mqttClient.Publish("UI/del/db", Encoding.UTF8.GetBytes(send));
                 }
-            } 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+                this.Close();
+            }
+            
         }
     }
 }

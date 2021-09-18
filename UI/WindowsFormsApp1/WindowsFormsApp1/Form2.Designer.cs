@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.Location = new System.Drawing.Point(147, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 25);
+            this.label1.Size = new System.Drawing.Size(110, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "quantity";
             // 
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Location = new System.Drawing.Point(117, 37);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 31);
+            this.textBox1.Size = new System.Drawing.Size(138, 37);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "quantity";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label6.Location = new System.Drawing.Point(112, 96);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 25);
+            this.label6.Size = new System.Drawing.Size(178, 31);
             this.label6.TabIndex = 2;
             this.label6.Text = "ready for sale";
             // 
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label7.Location = new System.Drawing.Point(96, 177);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 25);
+            this.label7.Size = new System.Drawing.Size(223, 31);
             this.label7.TabIndex = 3;
             this.label7.Text = "not ready for sale";
             // 
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label8.Location = new System.Drawing.Point(147, 269);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 25);
+            this.label8.Size = new System.Drawing.Size(75, 31);
             this.label8.TabIndex = 4;
             this.label8.Text = "defet";
             // 
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
             this.textBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox6.Location = new System.Drawing.Point(117, 124);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(138, 31);
+            this.textBox6.Size = new System.Drawing.Size(138, 37);
             this.textBox6.TabIndex = 5;
             this.textBox6.Text = "ready";
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
@@ -125,7 +125,7 @@ namespace WindowsFormsApp1
             this.textBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox7.Location = new System.Drawing.Point(117, 205);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(138, 31);
+            this.textBox7.Size = new System.Drawing.Size(138, 37);
             this.textBox7.TabIndex = 6;
             this.textBox7.Text = "not ready";
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
@@ -138,7 +138,7 @@ namespace WindowsFormsApp1
             this.textBox8.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox8.Location = new System.Drawing.Point(117, 297);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(138, 31);
+            this.textBox8.Size = new System.Drawing.Size(138, 37);
             this.textBox8.TabIndex = 7;
             this.textBox8.Text = "defet";
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
@@ -151,7 +151,7 @@ namespace WindowsFormsApp1
             this.textBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox9.Location = new System.Drawing.Point(117, 393);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(138, 31);
+            this.textBox9.Size = new System.Drawing.Size(138, 37);
             this.textBox9.TabIndex = 9;
             this.textBox9.Text = "tank";
             this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
@@ -164,7 +164,7 @@ namespace WindowsFormsApp1
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label9.Location = new System.Drawing.Point(154, 365);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 25);
+            this.label9.Size = new System.Drawing.Size(66, 31);
             this.label9.TabIndex = 10;
             this.label9.Text = "tank";
             // 
@@ -181,7 +181,7 @@ namespace WindowsFormsApp1
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.Aquarium_Fish_Tank_Transparent_Free_PNG;
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources._1686898;
             this.pictureBox5.Location = new System.Drawing.Point(37, 377);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(67, 47);
