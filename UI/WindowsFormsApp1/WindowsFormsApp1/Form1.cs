@@ -181,7 +181,7 @@ namespace WindowsFormsApp1
                     {
                         if (mqttClient != null && mqttClient.IsConnected)
                         {
-                            mqttClient.Publish("NonJoong/hardware/water1", Encoding.UTF8.GetBytes("ON1"));
+                            mqttClient.Publish("NonJoong/hardware/temp", Encoding.UTF8.GetBytes("XYZ"));
                         }
                     }
                     else if (value == "2")
